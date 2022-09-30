@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     border: 1px solid ${props => props.theme.blue};
   }
 
-  box-decoration-break:  {
+  body  {
     background-color: ${props => props.theme['base-background']};
     color: ${props => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
