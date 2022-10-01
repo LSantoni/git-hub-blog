@@ -1,14 +1,17 @@
+import logoImg from  "../../assets/logo.svg";
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBuilding, faUserGroup, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "./components/Card";
 import { ListHeader, ListRepositoriesContainer, ListSearch } from "./styles";
 
+
 export function ListRepositories() {
   return (
     <ListRepositoriesContainer>
       <ListHeader>
-        <img src="" alt="" />
+        <img src={logoImg} alt="" />
         <div>
           <header>
             <span>Cameron Williamson</span>
@@ -37,7 +40,7 @@ export function ListRepositories() {
       <ListSearch>
 
       </ListSearch>
-      <div>
+      {/* <div>
         <Card />
         <Card />
         <Card />
@@ -45,7 +48,7 @@ export function ListRepositories() {
         <Card />
         <Card />
         <Card />
-      </div>
+      </div> */}
     </ListRepositoriesContainer>
   )
 }
