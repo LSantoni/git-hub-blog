@@ -36,6 +36,12 @@ export const ListHeader = styled.header`
       text-decoration: none;
       color: ${props => props.theme.blue};
       align-items: center;
+
+      border-bottom: 1px solid transparent;
+
+      :hover {
+        border-bottom: 1px solid ${props => props.theme.blue};
+      }
     }
   }
 
