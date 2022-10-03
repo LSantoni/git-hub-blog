@@ -38,7 +38,11 @@ export function ListRepositories() {
         </div>
       </ListHeader>
       <ListSearch>
-
+        <div>
+          <span>Publicações</span>
+          <span>6 publicações</span>
+        </div>
+        <input type="text" placeholder="Buscar conteúdo" />
       </ListSearch>
       {/* <div>
         <Card />

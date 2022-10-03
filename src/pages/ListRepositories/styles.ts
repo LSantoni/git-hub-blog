@@ -65,5 +65,37 @@ export const ListHeader = styled.header`
 `;
 
 export const ListSearch = styled.div`
-  
+  margin-top: 4.5rem;
+  color: ${props => props.theme["base-span"]};
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+
+    span:first-of-type {
+      font-weight: 700;
+      color: ${props => props.theme["base-subtitle"]};
+      font-size: 1.125rem;
+    }
+  }
+
+  input {
+    background: ${props => props.theme["base-input"]};
+    border: 1px solid ${props => props.theme["base-border"]};
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: ${props => props.theme["base-text"]};
+    width: -webkit-fill-available;
+
+    ::placeholder {
+      color: ${props => props.theme["base-label"]};
+    }
+
+    :focus {
+      border: 1px solid ${props => props.theme.blue};
+    }
+  }
 `;
