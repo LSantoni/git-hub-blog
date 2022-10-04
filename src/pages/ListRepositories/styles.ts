@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ListRepositoriesContainer = styled.div`
   max-width: 54rem;
   margin: 0 auto;
+  padding-bottom: 5rem;
 `;
 
 export const ListHeader = styled.header`
@@ -104,4 +105,11 @@ export const ListSearch = styled.div`
       border: 1px solid ${props => props.theme.blue};
     }
   }
+`;
+
+export const CardList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
 `;

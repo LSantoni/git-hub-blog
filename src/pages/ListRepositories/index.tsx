@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBuilding, faUserGroup, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "./components/Card";
-import { ListHeader, ListRepositoriesContainer, ListSearch } from "./styles";
+import { CardList, ListHeader, ListRepositoriesContainer, ListSearch } from "./styles";
 
 
 export function ListRepositories() {
@@ -44,7 +44,7 @@ export function ListRepositories() {
         </div>
         <input type="text" placeholder="Buscar conteúdo" />
       </ListSearch>
-      {/* <div>
+      <CardList>
         <Card />
         <Card />
         <Card />
@@ -52,7 +52,7 @@ export function ListRepositories() {
         <Card />
         <Card />
         <Card />
-      </div> */}
+      </CardList>
     </ListRepositoriesContainer>
   )
 }
