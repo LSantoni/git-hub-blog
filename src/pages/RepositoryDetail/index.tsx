@@ -1,4 +1,4 @@
-export function RepoditoryDetail() { 
+export function RepositoryDetail() { 
   return (
     <div>Details</div>
   )
